@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário de Confirmação</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Confirme a sua presença!</h1>
+        <p>
+          Venha fazer parte desse evento, cadastre-se na nossa lista de
+          convidados
+        </p>
+        <button type="button" id="btn-tg">confirmar1</button>
+      </header>
+
+      <!-- Formulário começa escondido -->
+      <div class="hide formContainer">
+        <form id="form">
+          <label for="name">Nome: </label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Seu nome"
+            maxlength="30"
+          />
+
+          <label for="phone">Telefone:</label>
+          <div class="telefone-container">
+            <input
+              type="text"
+              pattern="^\d{2}$"
+              id="ddd"
+              name="ddd"
+              placeholder="DDD"
+              maxlength="2"
+              class="input-ddd"
+            />
+            <input
+              pattern="^\d{9}$"
+              type="text"
+              id="number"
+              name="number"
+              placeholder="Número"
+              maxlength="9"
+            />
+          </div>
+
+          <button type="submit" id="confirm">cadastre-se</button>
+        </form>
+      </div>
+
+      <div class="confirmed">
+        <p>Convidados já confirmados:</p>
+        <ul></ul>
+      </div>
+    </div>
+    <div class="overlay hide"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

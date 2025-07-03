@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #cfd9df;
+  font-family: Arial, sans-serif;
+  color: #1e1e1e;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #28c76f;
+  padding: 40px;
+  text-align: center;
+  color: white;
+}
+
+#btn-tg {
+  background-color: white;
+  width: 120px;
+  height: 40px;
+  border-radius: 8px;
+  color: #1e1e1e;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: start;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  margin: 20px;
+  max-width: 340px;
+  width: 100%;
+  z-index: 99;
+  /* padrão para posicionar elemento 'fixed' no meio */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+
+input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+.input-ddd {
+  max-width: 54px;
+}
+
+.telefone-container {
+  display: flex;
+  gap: 10px;
+}
+
+.confirmed {
+  max-width: 512px;
+  width: 100%;
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin: 40px auto 0;
+}
+
+.confirmed > p {
+  font-weight: bold;
+  font-size: 1.2rem;
+  width: 100%;
+  text-align: center;
+}
+
+.confirmed > ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+span{
+  
+}
+
+.confirmed > ul > li {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.2);
+}
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsla(0, 0%, 12%, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.hide {
+  display: none;
+}
